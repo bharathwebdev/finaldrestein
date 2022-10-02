@@ -1,20 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
 import { css } from 'styled-components'
-
+import '../App.css'
 const MainHeader = styled.div`
   display: flex; 
-  justify-content: center;
+  justify-content:flex-start;
    flex-direction: column;
   align-items: center;
   width: 100vw;
-  min-height: 100vh;
-
+  min-height:100vh;
+  color: white;
+  margin-top: 100px;
+  
 
 
   @media screen and (max-width:600px) {
-    background:rgba(0, 0, 0, 0.3);
-    z-index: -100;
+    /* background:rgba(0, 0, 0, 0.3); */
+    /* z-index: -100; */
+    margin-top: -10px;
 
 
   }
@@ -25,7 +28,7 @@ const HeaderBg = styled.div`
    align-items: center;
   justify-content:center;
   
-  z-index: 100;
+
   min-height: 10px;
   margin: 3em;
   width: 100%;
@@ -71,6 +74,7 @@ const DresteinText = styled.p`
        font-size:10vw;
        margin: 10px;
        min-width: 100%;
+
 
 
   }

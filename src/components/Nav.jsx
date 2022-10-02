@@ -2,16 +2,19 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import saveethalogo from '../assets/saveethaLogo.svg'
 import dresteinLogo from '../assets/dresteinLogo.svg'
+import Main from './Main'
 const Navbar = styled.nav`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 1rem;
+    margin-top: 1rem;
+
+    width: 100%;
 
  @media screen and (max-width:600px) {
          flex-direction: column;
          gap: 20px;
-         z-index: 100;
+
 
  } 
 `
@@ -20,9 +23,10 @@ const SLogo = styled.img`
      height: auto;
      background-color: #DADADA;
      border-radius: 10px;
+
      @media screen and (max-width:600px) {
-         width: 100%;
-         z-index: 100;
+         width: 90%;
+
 
          
  }
@@ -43,7 +47,7 @@ const DLogo = styled.img`
  animation: ${rotate} 2s infinite linear;
  transform-origin:center;
 @media screen and (max-width: 600px){
-  z-index: 100;
+
 }
 
 
@@ -74,7 +78,7 @@ const EventLogo = styled.div`
   /* background-color: red; */
 
   @media screen and (max-width: 600px) {
-    z-index: 100;
+
   }
 
 `
@@ -90,6 +94,7 @@ const DresteinLetter = styled.p`
   height: auto;
   @media screen and (max-width: 600px){
     font-size: 7vw;
+
 }
 `
 const Year = styled.p`
@@ -104,12 +109,16 @@ const Year = styled.p`
   @media screen and (max-width: 600px){
     font-size: 3vw;
 
+
 }
 `
 
 function Nav() {
 
   return (
+    <div>
+
+
      <Navbar>
        <SLogo src={saveethalogo}/>
         <LogoHead>
@@ -123,7 +132,11 @@ function Nav() {
         </ EventLogo >
       </LogoHead>
      </Navbar>
-    
+     <div>
+
+    <Main/>
+     </div>
+    </div>
   )
 }
 
