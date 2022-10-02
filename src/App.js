@@ -149,7 +149,7 @@ function App() {
       style={{
           backgroundImage: `url(${earth})`,
             backgroundSize: "fill",
-            backgroundPosition: "center -50%",
+            backgroundPosition: "center 50%",
             zIndex:2,
            
            }}
