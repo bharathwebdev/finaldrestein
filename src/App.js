@@ -1,5 +1,5 @@
 
-import logo from './assets/dresteinLogo.svg'
+
 import { Parallax,ParallaxLayer } from '@react-spring/parallax';
 import earth  from './assets/earth.png'
 import './App.css';
