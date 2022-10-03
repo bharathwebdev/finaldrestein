@@ -2,50 +2,47 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  
 }
 
-:root{
-  --primary-color:#000000;
-  --secondary_color:'white';
+:root {
+  --primary-color: #000000;
+  --secondary_color: "white";
   --neon-text-color: #f40;
   --neon-border-color: #08f;
 }
-body{
-  background-color:var(--primary-color);
+body {
+  background-color: var(--primary-color);
   color: var(--secondary_color);
-
 }
-.span_btn{
+.span_btn {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-.span_btn::after{
-  content: '\00bb';
+.span_btn::after {
+  content: "\00bb";
   position: absolute;
-  color:black;
+  color: black;
   opacity: 0;
   top: 0;
   right: -20px;
   transition: 0.5s;
 }
-.button:hover span{
+.button:hover span {
   padding-right: 40px;
 }
-.button:hover span::after{
-opacity: 1;
-right: 0;
+.button:hover span::after {
+  opacity: 1;
+  right: 0;
 }
 
 /* departments card */
 .container {
-
 }
 .container .card {
   position: relative;
@@ -97,7 +94,6 @@ right: 0;
 .container .card:hover .imgBx {
   top: 0%;
   transform: translateY(0%);
-
 }
 
 .container .card .imgBx img {
@@ -106,9 +102,8 @@ right: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 270px;
-   max-height: 150px;
+  max-height: 150px;
   object-fit: contain;
-
 }
 
 .container .card .contentBx {
@@ -122,7 +117,8 @@ right: 0;
 }
 
 .container .card:hover .contentBx {
-  height: 210px;
+  height: 180px;
+
 }
 
 .container .card .contentBx h2 {
@@ -177,12 +173,7 @@ right: 0;
 
 .container .card:hover .contentBx a {
   opacity: 1;
-  transform: translateY(0px);
+  transform: translateY(50px);
   margin-top: 9px;
   transition-delay: 0.5s;
 }
-
-
-
-
-
